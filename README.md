@@ -2,7 +2,7 @@
 
 by Jeffrey Rutledge
 
-gitusr is a shell script to easily manage using multiple git hub accounts.
+gitusr is a shell script that allows you to easily manage using multiple git hub accounts.
 The script adds a shell command `gitusr`.
 This shell command allows you to change or check the current git hub account with a simple flag.
 For example, to change to your work email you might type `gitusr -w`.
@@ -10,15 +10,15 @@ For example, to change to your work email you might type `gitusr -w`.
 _(Full feature list below Setup)_
 
 ## Setup
-Simply run the setup.py script and answer the questions.
+Run the setup.py script and answer the questions.
 The script will ask you for an email and then a flag to use with that email.
 It will continue doing this until you type `done` for an email.
 Then it will output the shell script to `/usr/local/bin/gitusr`.
 This will allow you to use the `gitusr` command in your shell.
 
 ### Reconfigure
-Simply, run the setup.py script again.
-This will ask you the same questions and simply overwrite the existing shell script.
+Run the setup.py script again.
+This will ask you the same questions and overwrite the existing shell script.
 
 ## Uninstall
 Delete the shell script file.
@@ -56,3 +56,6 @@ rm /usr/local/bin/gitusr
   ```bash
   gitusr -h
   ```
+  
+#### System Requirements
+The setup script is written in python 3 so you will need python 3.
