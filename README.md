@@ -1,7 +1,5 @@
 # gitusr
 
-by Jeffrey Rutledge
-
 gitusr is a shell script that allows you to easily manage using multiple git hub accounts.
 The script adds a shell command `gitusr`.
 This shell command allows you to change or check the current git hub account with a simple flag.
