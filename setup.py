@@ -15,7 +15,7 @@ SCRIPT_PATH = "/usr/local/bin/gitusr"
 ############# Parts of the Script that do not change
 #####################################################
 SCRIPT_PART1 =\
-"""#!/bin/sh
+"""#!/usr/bin/env bash
 #
 # The gitusr shell script is made for managing multiple git hub accounts.
 # Type gitusr -h in the shell for a help message.
