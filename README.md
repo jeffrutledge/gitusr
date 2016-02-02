@@ -61,5 +61,8 @@ rm /usr/local/bin/gitusr
   gitusr -h
   ```
   
+## TODOS
+- [ ] Allow Setup.py to take command line arguments
+  
 #### System Requirements
 The setup script is written in python 3 so you will need python 3.
