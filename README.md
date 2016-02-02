@@ -11,6 +11,10 @@ _(Full feature list below)_
 
 ## Setup
 Run the setup.py script and answer the questions.
+When in the directory containing setup.py, you can run the python script using:
+```sh
+./setup.py
+```
 The script will ask you for an email and then a flag to use with that email.
 It will continue doing this until you type `done` for an email.
 Then it will output the shell script to `/usr/local/bin/gitusr`.
