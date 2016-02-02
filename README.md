@@ -23,37 +23,37 @@ This will ask you the same questions and overwrite the existing shell script.
 ## Uninstall
 Delete the shell script file.
 This can be done with the command:
-```bash
+```sh
 rm /usr/local/bin/gitusr
 ```
 
 ## Features
 * Check git email of current repository
-  ```bash
+  ```sh
   gitusr
   ```
   
   _or check global git email_
   
-  ```bash
+  ```sh
   gitusr -g
   ```
 
 * Change the current git email
   _(Assuming you have an email set to use the -w flag)_
 
-  ```bash
+  ```sh
   gitusr -w
   ```
   
   _or change the global git email_
 
-  ```bash
+  ```sh
   gitusr -g -w
   ```
 
 * Display a help message _(including set email flags)_
-  ```bash
+  ```sh
   gitusr -h
   ```
   
