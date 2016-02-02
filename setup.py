@@ -23,7 +23,13 @@ SCRIPT_PART1 =\
 #
 # More information can be found at: https://github.com/jeffrutledge/gitusr
 
-while getopts ':gmph' flag; do
+while getopts ':gh"""
+
+##################################
+# getopts argument flags
+##################################
+
+SCRIPT_PART2 ="""' flag; do
     case "$flag" in
       g) globalFlag=true ;;"""
 
@@ -31,7 +37,7 @@ while getopts ':gmph' flag; do
 # email flags
 ##################################
 
-SCRIPT_PART2 ="""
+SCRIPT_PART3 ="""
       h) # Display Help text
           echo "gitusr | Check or Set Git Email"
           echo ""
@@ -49,7 +55,7 @@ SCRIPT_PART2 ="""
 # help message flag descriptions
 ##################################
 
-SCRIPT_PART3 ="""
+SCRIPT_PART4 ="""
           echo ""
           echo "More information can be found at: https://github.com/jeffrutledge/gitusr"
           exit ;;
@@ -165,20 +171,32 @@ def generateScriptText(emailFlagTuples):
   Generates the final bash script text,
   using the given emails and flags.
   """
-  getoptsFlagsString = 
+  getoptsFlagsString = generateGetoptsFlags(emailFlagTuples)
   emailFlagString = generateEmailFlags(emailFlagTuples)
   helpMessageString = generateHelpMessage(emailFlagTuples)
 
   #Assemble the full script string
   scriptString = SCRIPT_PART1
-  scriptString += emailFlagString
+  scriptString += getoptsFlagsString
   scriptString += SCRIPT_PART2
-  scriptString += helpMessageString
+  scriptString += emailFlagString
   scriptString += SCRIPT_PART3
+  scriptString += helpMessageString
+  scriptString += SCRIPT_PART4
 
   return scriptString
 
-def generate
+def generateGetoptsFlags(emailFlagTuples):
+  """
+  Generates the part of the getopts argument,
+  which declares the flags to look for.
+  Uses flags in emailFlagTuples.
+  """
+  flagsString = ''
+  for emailFlagTuple in emailFlagTuples:
+    flagsString += emailFlagTuple[1]
+
+  return flagsString
 
 def generateEmailFlags(emailFlagTuples):
   """
