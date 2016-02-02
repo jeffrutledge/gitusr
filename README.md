@@ -7,7 +7,7 @@ The script adds a shell command `gitusr`.
 This shell command allows you to change or check the current git hub account with a simple flag.
 For example, to change to your work email you might type `gitusr -w`.
 
-_(Full feature list below Setup)_
+_(Full feature list below)_
 
 ## Setup
 Run the setup.py script and answer the questions.
