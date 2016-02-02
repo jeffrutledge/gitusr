@@ -12,7 +12,7 @@ _(Full feature list below)_
 ## Setup
 Run the setup.py script and answer the questions.
 When in the directory containing setup.py, you can run the python script using:
-```sh
+```bash
 ./setup.py
 ```
 The script will ask you for an email and then a flag to use with that email.
@@ -27,37 +27,37 @@ This will ask you the same questions and overwrite the existing shell script.
 ## Uninstall
 Delete the shell script file.
 This can be done with the command:
-```sh
+```bash
 rm /usr/local/bin/gitusr
 ```
 
 ## Features
 * Check git email of current repository
-  ```sh
+  ```bash
   gitusr
   ```
   
   _or check global git email_
   
-  ```sh
+  ```bash
   gitusr -g
   ```
 
 * Change the current git email
   _(Assuming you have an email set to use the -w flag)_
 
-  ```sh
+  ```bash
   gitusr -w
   ```
   
   _or change the global git email_
 
-  ```sh
+  ```bash
   gitusr -g -w
   ```
 
 * Display a help message _(including set email flags)_
-  ```sh
+  ```bash
   gitusr -h
   ```
   
