@@ -32,8 +32,9 @@ rm /usr/local/bin/gitusr
   ```bash
   gitusr
   ```
-        _or check global git email_
-        
+  
+  _or check global git email_
+  
   ```bash
   gitusr -g
   ```
@@ -44,7 +45,8 @@ rm /usr/local/bin/gitusr
   ```bash
   gitusr -w
   ```
-        _or change the global git email_
+  
+  _or change the global git email_
 
   ```bash
   gitusr -g -w
